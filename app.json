@@ -1,0 +1,42 @@
+{
+    "name": "aps-export-revit-pdf",
+    "description": "A sample showing how to export views|sheets to pdf",
+    "repository": "https://github.com/Autodesk-Platform-Services/aps-export-revit-pdf",
+    "logo": "https://cdn.autodesk.io/favicon.ico",
+    "keywords": [
+        "autodesk",
+        "aps",
+        "revit",
+        "design automation"        
+    ],
+    "env": {
+        "APS_CLIENT_ID": {
+            "description": "APS Client ID"
+        },
+        "APS_CLIENT_SECRET": {
+            "description": "APS Client Secret"
+        },
+        "APS_CALLBACK_URL": {
+            "description": "Callback URL of your APS app, required for 3-legged OAuth",
+            "value": "https://<<YOUR HEROKU APP NAME HERE>>.herokuapp.com/api/aps/callback/oauth"
+        },
+        "APS_WEBHOOK_URL": {
+            "description": "Callback URL of your webhook",
+            "value": "http://<<YOUR HEROKU APP NAME HERE>>.herokuapp.com/api/aps/callback/designautomation"
+        },
+        "DESIGN_AUTOMATION_NICKNAME": {
+            "description": "Revit Design Automation NickName, APS_CLIENT_ID by default",
+            "value": "<<YOUR APS_CLIENT_ID HERE>>"
+        },
+        "DESIGN_AUTOMATION_ACTIVITY_NAME": {
+            "description": "Revit Design Automation Activity Name",
+            "value": "ExportToPdfsAppActivity"
+        },
+        "DESIGN_AUTOMATION_ACTIVITY_ALIAS": {
+            "description": "Revit Design Automation Activity Alias",
+            "value": "dev"
+        }        
+    },
+    "website": "https://developer.autodesk.com/",
+    "success_url": "/"
+}
